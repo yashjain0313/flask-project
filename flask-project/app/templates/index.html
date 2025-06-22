@@ -1,0 +1,130 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <div class="jumbotron bg-primary text-white rounded p-5 mb-4">
+      <div class="text-center">
+        <h1 class="display-4">
+          <i class="fas fa-tasks me-3"></i>Welcome to Task Manager
+        </h1>
+        <p class="lead">
+          Stay organized and boost your productivity with our simple yet
+          powerful task management system.
+        </p>
+        <hr class="my-4 bg-white" />
+        <p>
+          Create, organize, and track your tasks with ease. Set priorities,
+          categorize your work, and never miss a deadline again.
+        </p>
+        <div class="mt-4">
+          <a
+            class="btn btn-light btn-lg me-3"
+            href="{{ url_for('auth.register') }}"
+            role="button"
+          >
+            <i class="fas fa-user-plus me-2"></i>Get Started
+          </a>
+          <a
+            class="btn btn-outline-light btn-lg"
+            href="{{ url_for('auth.login') }}"
+            role="button"
+          >
+            <i class="fas fa-sign-in-alt me-2"></i>Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <div
+          class="feature-icon bg-primary text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
+          style="width: 60px; height: 60px"
+        >
+          <i class="fas fa-plus fa-lg"></i>
+        </div>
+        <h5 class="card-title">Create Tasks</h5>
+        <p class="card-text">
+          Quickly add new tasks with titles, descriptions, categories, and
+          priority levels.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <div
+          class="feature-icon bg-success text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
+          style="width: 60px; height: 60px"
+        >
+          <i class="fas fa-list fa-lg"></i>
+        </div>
+        <h5 class="card-title">Organize</h5>
+        <p class="card-text">
+          Categorize your tasks and filter them by category, priority, or
+          completion status.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <div
+          class="feature-icon bg-info text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
+          style="width: 60px; height: 60px"
+        >
+          <i class="fas fa-check fa-lg"></i>
+        </div>
+        <h5 class="card-title">Track Progress</h5>
+        <p class="card-text">
+          Mark tasks as complete and track your productivity over time.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-lg-8 mx-auto text-center">
+    <h2 class="mb-4">Why Choose Our Task Manager?</h2>
+    <div class="row">
+      <div class="col-sm-6 mb-3">
+        <i class="fas fa-shield-alt text-primary fa-2x mb-2"></i>
+        <h6>Secure & Private</h6>
+        <small class="text-muted"
+          >Your tasks are private and secure with user authentication.</small
+        >
+      </div>
+      <div class="col-sm-6 mb-3">
+        <i class="fas fa-mobile-alt text-primary fa-2x mb-2"></i>
+        <h6>Responsive Design</h6>
+        <small class="text-muted"
+          >Access your tasks from any device - desktop, tablet, or
+          mobile.</small
+        >
+      </div>
+      <div class="col-sm-6 mb-3">
+        <i class="fas fa-bolt text-primary fa-2x mb-2"></i>
+        <h6>Fast & Efficient</h6>
+        <small class="text-muted"
+          >Quick loading times and smooth user experience.</small
+        >
+      </div>
+      <div class="col-sm-6 mb-3">
+        <i class="fas fa-cogs text-primary fa-2x mb-2"></i>
+        <h6>Easy to Use</h6>
+        <small class="text-muted"
+          >Intuitive interface that anyone can master in minutes.</small
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
